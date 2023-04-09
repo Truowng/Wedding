@@ -1,0 +1,144 @@
+:root {
+  --primary-color: #d5e0c0;
+  --bg-color: #f8f7f4;
+  --text-color: #3c3c3c;
+}
+
+.font-primary {
+  font-family: "Bellefair", serif;
+}
+
+.font-secondary {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 6px;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bellefair", serif;
+  background-color: var(--bg-color);
+  letter-spacing: -3px;
+  color: var(--text-color);
+  letter-spacing: -1px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* START HEADER */
+#header {
+  width: 100%;
+}
+
+#header .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+#header .logo .title {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+#header .logo .badge-desc {
+  margin-bottom: 0;
+}
+/* END HEADER */
+
+/* START BANNER */
+#banner {
+  margin-top: 100px;
+}
+
+#banner .banner-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+#banner .banner-title .title {
+  text-transform: uppercase;
+  font-size: 60px;
+  text-align: center;
+  line-height: 50px;
+}
+
+#banner .banner-img,
+#banner .banner-img img {
+  width: 100%;
+}
+
+/* END BANNER */
+
+/* START STORY */
+#story {
+  margin-top: 150px;
+}
+
+#story .story-content {
+  height: 100%;
+  margin-left: 115px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+#story .story-img {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  position: relative;
+}
+
+#story .story-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  background-color: var(--primary-color);
+  width: 60%;
+  height: 100%;
+  z-index: -1;
+}
+
+#story .story-img img {
+  width: 60%;
+  transform: translateY(10%);
+}
+
+#story .story-content-title p {
+  font-size: 60px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+#story .story-content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+#story .story-content-text p {
+  font-size: 30px;
+  line-height: 35px;
+  width: 70%;
+}
+
+/* END STORY */
