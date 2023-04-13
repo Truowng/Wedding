@@ -40,8 +40,7 @@ a {
   }
 
   100% {
-    transform: translateX(-332%);
-    /* transform: translateX(-411.25vw); */
+    transform: translateX(-270%);
   }
 }
 /* END ANIMATION */
@@ -193,7 +192,7 @@ a {
   align-items: center;
   justify-content: start;
   gap: 200px;
-  animation: slide linear 50s infinite alternate-reverse;
+  animation: slide linear 35s infinite alternate-reverse;
 }
 
 #moment .swiper {
@@ -333,6 +332,12 @@ a {
 #invitation .groom-bride .groom .qr,
 #invitation .groom-bride .bride .qr {
   margin-bottom: 20px;
+  width: 150px;
+}
+
+#invitation .groom-bride .groom .qr img,
+#invitation .groom-bride .bride .qr img {
+  width: 100%;
 }
 
 #invitation .invitation-pattern img {
