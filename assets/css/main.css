@@ -184,12 +184,43 @@ a {
   overflow: hidden;
 }
 
+#moment .moment-gallery {
+  display: none;
+}
+
 #moment .moment-slide-list {
   display: flex;
   align-items: center;
   justify-content: start;
   gap: 200px;
   animation: slide linear 50s infinite alternate-reverse;
+}
+
+#moment .swiper {
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+}
+
+#moment .swiper-wrapper {
+  align-items: center;
+}
+
+#moment .swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 1;
+}
+
+#moment .swiper-pagination-bullet-active {
+  background-color: var(--primary-color);
+  border: 1px solid #fff;
+}
+
+#moment .swiper-horizontal > .swiper-pagination-bullets,
+#moment .swiper-pagination-bullets.swiper-pagination-horizontal,
+#moment .swiper-pagination-custom,
+#moment .swiper-pagination-fraction {
+  bottom: 10px;
 }
 
 /* END MOMEMNT */
@@ -251,6 +282,11 @@ a {
   text-align: center;
 }
 
+#invitation .invitation-content .information {
+  width: 100%;
+  padding: 0 20px;
+}
+
 #invitation .invitation-content .information .address-time p {
   font-size: 30px;
   text-align: center;
@@ -278,6 +314,12 @@ a {
 #invitation .groom-bride .groom .name,
 #invitation .groom-bride .bride .name {
   margin-bottom: 50px;
+  width: 100%;
+}
+
+#invitation .groom-bride .groom .name img,
+#invitation .groom-bride .bride .name img {
+  width: 100%;
 }
 
 #invitation .groom-bride .groom p,
@@ -291,6 +333,10 @@ a {
 #invitation .groom-bride .groom .qr,
 #invitation .groom-bride .bride .qr {
   margin-bottom: 20px;
+}
+
+#invitation .invitation-pattern img {
+  width: 100%;
 }
 
 /* END INVITATION */

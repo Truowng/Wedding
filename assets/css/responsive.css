@@ -1,12 +1,11 @@
-/* START MOBILE */
-@media (max-width: 576px) {
+/* START TABLET */
+@media (max-width: 992px) {
   /* START BANNER */
   #banner .banner-title .title {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 40px;
+    line-height: 1;
   }
   /* END BANNER */
-
   /* START STORY */
   #story .story-img::after {
     left: 0;
@@ -19,9 +18,10 @@
   }
 
   #story .story-content-title p {
-    font-size: 40px;
+    font-size: 50px;
     line-height: 1;
     margin-bottom: 0;
+    text-align: center;
   }
 
   #story .story-content-text {
@@ -29,10 +29,49 @@
   }
 
   #story .story-content-text p {
-    font-size: 25px;
+    font-size: 30px;
     line-height: 1.1;
+    text-align: center;
   }
   /* END STORY */
+
+  /* START INVIATION */
+  #invitation .invitation-content .title h2 {
+    font-size: 45px;
+  }
+
+  #invitation .invitation-card .invitation-pattern:nth-child(1) {
+    width: 200px;
+  }
+
+  #invitation .invitation-card .invitation-pattern:nth-child(2) {
+    width: 130px;
+  }
+  /* END INVIATION */
+
+  /* START MAP */
+  #map .map-title h2 {
+    font-size: 45px;
+  }
+  /* END MAP */
+
+  /* START FOOTER */
+  #footer .footer-content h2 {
+    font-size: 45px;
+  }
+  /* END FOOTER */
+}
+
+@media (max-width: 768px) {
+  /* START HEADER */
+  #header .logo .title {
+    font-size: 25px;
+  }
+
+  #header .logo .badge-desc {
+    font-size: 14px;
+  }
+  /* END HEADER */
 
   /* START MOMENT */
   #moment {
@@ -42,6 +81,180 @@
   #moment .title {
     font-size: 40px;
   }
+
+  #moment .moment-slide {
+    display: none;
+  }
+
+  #moment .moment-gallery {
+    display: block;
+    margin-top: 100px;
+  }
+
+  #moment .moment-gallery .moment-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    height: 100%;
+  }
+
+  #moment .moment-gallery .moment-img img {
+    width: 100%;
+  }
+
   /* END MOMENT */
+
+  /* START INVITATION */
+  #invitation .invitation-card .invitation-pattern:nth-child(1) {
+    width: 200px;
+  }
+
+  #invitation .invitation-card .invitation-pattern:nth-child(2) {
+    width: 100px;
+  }
+
+  #invitation .invitation-content .title h2 {
+    font-size: 40px;
+  }
+
+  #invitation .invitation-content .title .badge-desc {
+    font-size: 12px;
+  }
+
+  #invitation .invitation-content .information .address-time p {
+    font-size: 20px;
+  }
+
+  #invitation .groom-bride .groom .name,
+  #invitation .groom-bride .bride .name {
+    width: 100%;
+  }
+
+  #invitation .groom-bride .groom .name img,
+  #invitation .groom-bride .bride .name img {
+    width: 100%;
+  }
+
+  #invitation .invitation-content .groom-bride {
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  #invitation .invitation-content .pattern {
+    display: flex;
+    justify-content: center;
+    display: none;
+  }
+
+  /* END INVITATION */
+
+  /* START MAP */
+  #map {
+    margin-top: 100px;
+  }
+  #map .map-title {
+    padding-right: 0;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  #map .map-title h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  /* END MAP */
+
+  /* START FOOTER  */
+  #footer {
+    margin-top: 100px;
+    padding: 100px 0;
+  }
+
+  #footer .footer-content h2 {
+    font-size: 40px;
+    padding: 30px;
+  }
+
+  #footer .footer-content-img {
+    width: 200px;
+  }
+
+  /* END FOOTER  */
+}
+/* END TABLET */
+
+/* START MOBILE */
+@media (max-width: 576px) {
+  /* START HEADER */
+  #header .logo .title {
+    font-size: 20px;
+  }
+
+  #header .logo .badge-desc {
+    font-size: 12px;
+  }
+  /* END HEADER */
+  /* START BANNER */
+  #banner {
+    margin-top: 50px;
+  }
+
+  #banner .banner-title .title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  #banner .banner-title {
+    margin-bottom: 50px;
+  }
+  /* END BANNER */
+
+  /* START STORY */
+
+  #story .story-content-title p {
+    font-size: 40px;
+  }
+
+  #story .story-content-text p {
+    font-size: 25px;
+  }
+  /* END STORY */
+
+  /* START INVIATION */
+  #invitation .invitation-card .invitation-pattern:nth-child(1) {
+    width: 150px;
+  }
+  /* END INVIATION */
+
+  /* START FOOTER  */
+  #footer {
+    margin-top: 100px;
+    padding: 100px 0;
+  }
+
+  #footer .footer-content h2 {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  #footer .footer-content-img {
+    width: 130px;
+  }
+
+  /* END FOOTER  */
+}
+
+@media (max-width: 390px) {
+  /* START FOOTER */
+  #footer .footer-content h2 {
+    font-size: 20px;
+    padding: 20px;
+  }
+  #footer .footer-content-img {
+    width: 100px;
+  }
+  /* END FOOTER */
 }
 /* END MOBILE */
