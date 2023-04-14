@@ -1,3 +1,7 @@
+const musicBtn = document.querySelector("#music");
+const music = document.querySelector(".music");
+let toggle = true;
+
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
@@ -11,15 +15,16 @@ const swiper = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination",
   },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
 });
+
+const toggleMusic = () => {
+  if (toggle) {
+    musicBtn.innerHTML = `<i class="fa-solid fa-volume-xmark"></i>`;
+    music.muted = true;
+    toggle = false;
+  } else {
+    musicBtn.innerHTML = ` <i class="fa-solid fa-volume-high"></i>`;
+    toggle = true;
+    music.muted = false;
+  }
+};

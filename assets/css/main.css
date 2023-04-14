@@ -1,5 +1,6 @@
 :root {
   --primary-color: #d5e0c0;
+  --green: #96b36c;
   --bg-color: #f8f7f4;
   --text-color: #3c3c3c;
 }
@@ -26,6 +27,7 @@ body {
   letter-spacing: -3px;
   color: var(--text-color);
   letter-spacing: -1px;
+  position: relative;
 }
 
 a {
@@ -43,7 +45,59 @@ a {
     transform: translateX(-270%);
   }
 }
+
+@keyframes jellyIn {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+
+  25% {
+    transform: scaleX(1.1) scaleY(0.9);
+    opacity: 0.25;
+  }
+  50% {
+    transform: scaleX(0.9) scaleY(1.1);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 /* END ANIMATION */
+
+/* START MUSIC */
+#music {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+#music:hover {
+  background-color: var(--bg-color);
+}
+
+#music:hover svg {
+  color: var(--green);
+}
+
+#music svg {
+  color: #fff;
+  font-size: 20px;
+  transition: all ease 0.3s;
+  animation: jellyIn ease 0.4s;
+}
+/* END MUSIC */
 
 /* START HEADER */
 #header {
