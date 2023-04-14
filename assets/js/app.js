@@ -19,12 +19,12 @@ const swiper = new Swiper(".swiper", {
 
 const toggleMusic = () => {
   if (toggle) {
-    musicBtn.innerHTML = `<i class="fa-solid fa-volume-xmark"></i>`;
-    music.muted = true;
+    musicBtn.innerHTML = `<i class="fa-solid fa-pause"></i>`;
+    music.play();
     toggle = false;
   } else {
-    musicBtn.innerHTML = ` <i class="fa-solid fa-volume-high"></i>`;
+    musicBtn.innerHTML = ` <i class="fa-solid fa-play"></i>`;
     toggle = true;
-    music.muted = false;
+    music.pause();
   }
 };
