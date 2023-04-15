@@ -17,6 +17,8 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+music.volume = 0.2;
+
 const toggleMusic = () => {
   if (toggle) {
     musicBtn.innerHTML = `<i class="fa-solid fa-pause"></i>`;
